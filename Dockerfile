@@ -1,4 +1,4 @@
-FROM maven:3-jdk-10
+FROM maven:3-jdk-11
 
 MAINTAINER Felix Schumacher ch4inl3ss@gmail.com
 
