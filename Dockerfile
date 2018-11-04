@@ -1,7 +1,8 @@
 FROM maven:3-jdk-11
 
-MAINTAINER Felix Schumacher ch4inl3ss@gmail.com
+MAINTAINER Sascha Selzer sascha.selzer@gmail.com
 
-RUN apt-get update && \
-    apt-get install git-crypt && \
-    apt-get install jq -y
+RUN apt-get update && apt-get install -y \
+    git-crypt \
+    jq && \
+    rm -rf /var/lib/apt/lists/*
